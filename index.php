@@ -70,11 +70,17 @@ $faqs = [
 
 <body>
 
+    <!-- Site header -->
     <header class="px-3 pt-3">
+
+        <!-- logo -->
         <div class="logo d-flex align-items-center">
             <img src="./img/Google-logo.png" alt="">
             <p class="my-0 ml-2">Privacy e termini</p>
         </div>
+        <!-- /logo -->
+
+        <!-- navbar -->
         <nav>
             <a href="#">Introduzione</a>
             <a href="#">Note sulla privacy</a>
@@ -82,12 +88,18 @@ $faqs = [
             <a href="#">Tecnologie</a>
             <a href="#" class="active">Domande frequenti</a>
         </nav>
+        <!-- /navbar -->
+
     </header>
+    <!-- Site header -->
+
+    <!-- /Site main -->
     <main>
 
         <div class="container">
             <?php foreach ($faqs as $faq) {?>
             <div class="faq">
+
                 <h2 class="mb-4"><?php echo $faq['question']; ?></h2>
 
                 <?php foreach ($faq['answer'] as $pargraph) {?>
@@ -101,6 +113,7 @@ $faqs = [
             <?php }; ?>
         </div>
     </main>
+    <!-- /Site main -->
 
 </body>
 
