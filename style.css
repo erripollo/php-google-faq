@@ -1,0 +1,29 @@
+header {
+  border-bottom: 1px solid #cbcbcb;
+}
+
+.logo {
+  color: #5f6368;
+  margin-bottom: 10px;
+}
+.logo img {
+  width: 80px;
+}
+.logo p {
+  font-size: 1.4rem;
+}
+
+nav a {
+  color: #5f6368;
+  margin-right: 40px;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #5f6368;
+}
+nav a.active {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
+}

@@ -53,28 +53,49 @@ $faqs = [
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domande frequenti</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
-    <header>
+
+    <header class="px-3 pt-3">
+        <div class="logo d-flex align-items-center">
+            <img src="./img/Google-logo.png" alt="">
+            <p class="my-0 ml-2">Privacy e termini</p>
+        </div>
+        <nav>
+            <a href="#">Introduzione</a>
+            <a href="#">Note sulla privacy</a>
+            <a href="#">Termini di servizio</a>
+            <a href="#">Tecnologie</a>
+            <a href="#" class="active">Domande frequenti</a>
+        </nav>
     </header>
     <main>
         <?php foreach ($faqs as $faq) {?>
         <h2><?php echo $faq['question']; ?></h2>
 
-            <?php foreach ($faq['answer'] as $pargraph) {?>
+        <?php foreach ($faq['answer'] as $pargraph) {?>
 
-                <p><?php echo $pargraph; ?></p>
+        <p><?php echo $pargraph; ?></p>
 
-            <?php } ?>
-            
+        <?php } ?>
+
         <?php }; ?>
     </main>
 
 </body>
+
 </html>
