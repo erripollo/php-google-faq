@@ -84,16 +84,22 @@ $faqs = [
         </nav>
     </header>
     <main>
-        <?php foreach ($faqs as $faq) {?>
-        <h2><?php echo $faq['question']; ?></h2>
 
-        <?php foreach ($faq['answer'] as $pargraph) {?>
+        <div class="container">
+            <?php foreach ($faqs as $faq) {?>
+            <div class="faq">
+                <h2 class="mb-4"><?php echo $faq['question']; ?></h2>
 
-        <p><?php echo $pargraph; ?></p>
+                <?php foreach ($faq['answer'] as $pargraph) {?>
 
-        <?php } ?>
+                <p class="mb-4"><?php echo $pargraph; ?></p>
 
-        <?php }; ?>
+                <?php } ?>
+
+            </div>
+
+            <?php }; ?>
+        </div>
     </main>
 
 </body>
